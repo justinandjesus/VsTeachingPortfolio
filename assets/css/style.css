@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.to-top {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  padding: 10px;
+  z-index: 100;
+  background: #2b2b2b;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
+  display: none;
+}
+
+.to-top i.fa {
+  font-size: 5vh;
+  color: white;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#about {
+  margin-top: -120px;
+  padding-top: 120px !important;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #fff !important;
+  background: url(../img/cream_dust.png);
+}
+
+body section.image {
+  position: relative;
+  height: 100vh;
+  background: url(../img/bg.png);
+}
+
+body section.image:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(43, 43, 43, 0.28);
+  opacity: 0.5;
+}
+
+body .ham {
+  width: 30px;
+  height: 25px;
+  position: relative;
+}
+
+body .ham .burg {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 50%;
+  background: #fff;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+body .ham .burg:nth-child(even) {
+  left: 50%;
+  border-radius: 0 15px 15px 0;
+}
+
+body .ham .burg:nth-child(odd) {
+  left: 0;
+  border-radius: 15px 0 0 15px;
+}
+
+body .ham .burg:nth-child(1), body .ham .burg:nth-child(2) {
+  top: 0px;
+}
+
+body .ham .burg:nth-child(3), body .ham .burg:nth-child(4) {
+  top: 10px;
+}
+
+body .ham .burg:nth-child(5), body .ham .burg:nth-child(6) {
+  top: 20px;
+}
+
+body .ham.open .burg:nth-child(1), body .ham.open .burg:nth-child(6) {
+  transform: rotate(45deg);
+}
+
+body .ham.open .burg:nth-child(2), body .ham.open .burg:nth-child(5) {
+  transform: rotate(-45deg);
+}
+
+body .ham.open .burg:nth-child(3) {
+  left: -10px;
+  opacity: 0;
+}
+
+body .ham.open .burg:nth-child(4) {
+  left: 20px;
+  opacity: 0;
+}
+
+body .ham.open .burg:nth-child(1), body .ham.open .burg:nth-child(2) {
+  top: 5px;
+}
+
+body .ham.open .burg:nth-child(5), body .ham.open .burg:nth-child(6) {
+  top: 15px;
+}
+
+body .ham.open .burg:nth-child(2), body .ham.open .burg:nth-child(6) {
+  left: 12px;
+}
+
+body .ham.open .burg:nth-child(1), body .ham.open .burg:nth-child(5) {
+  left: 1px;
+}
+
+body .header {
+  padding-top: 7px;
+}
+
+body .navbar {
+  background: none;
+  border: none;
+}
+
+body .navbar .navbar-toggle, body .navbar .navbar-collapse {
+  border: 0;
+}
+
+body .navbar .navbar-toggle:focus, body .navbar .navbar-toggle:hover {
+  background: none !important;
+}
+
+body .navbar .navbar-toggler {
+  filter: invert(100%);
+}
+
+body .navbar .navbar-brand {
+  color: #fff !important;
+  font-size: 30px;
+  text-shadow: 0px 0px 10px #2b2b2b;
+}
+
+@media (max-width: 425px) {
+  body .navbar .navbar-brand {
+    font-size: 20px;
+  }
+}
+
+body .navbar-collapse {
+  justify-content: flex-end;
+}
+
+body .navbar-collapse li {
+  margin-right: 15px;
+  text-shadow: 0px 0px 10px #2b2b2b;
+}
+
+body .navbar-collapse li a {
+  color: #fff !important;
+}
+
+body .firstClick {
+  color: white;
+}
+
+body .down-point {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10vh;
+}
+
+body .welcomeText {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body .welcomeText .text {
+  width: 70vw;
+  color: #fff !important;
+  border-radius: 2px;
+  border: 2px white solid;
+  padding: 20px;
+  text-shadow: -1px -1px 2px #2b2b2b;
+  box-shadow: -2px -2px 20px #1b1b1a;
+  font-size: 47px;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  body .welcomeText .text {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .welcomeText .text {
+    width: 50vw;
+  }
+}
+
+body #about {
+  color: #2b2b2b !important;
+  min-height: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+body #about hr {
+  border-color: rgba(43, 43, 43, 0.38);
+  width: 80%;
+}
+
+body #about .textAboutMe {
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body #about .textAboutMe .high {
+  color: #d60000;
+  font-weight: bolder;
+}
+
+body #about .textAboutMe p {
+  font-size: 17px;
+  text-align: left;
+  width: 90%;
+}
+
+body #about img {
+  border-radius: 25px;
+  margin: 0 auto;
+  height: 500px;
+}
+
+body #about .colsHolder {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body #about .colsHolder {
+    flex-direction: column;
+  }
+}
+
+body #about .col-8 {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+body #about .col-4 {
+  flex: 4;
+  width: 80%;
+  margin: 0 auto;
+}
+
+body #about .skills {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 425px) {
+  body #about .skills {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  body #about .skills {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  body #about .skills {
+    width: 50%;
+  }
+}
+
+body #about .skills .skill {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 370px) {
+  body #about .skills .skill h4 {
+    font-size: 14px;
+  }
+}
+
+body #about .skills .skill li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+body #about .skills .skill .counterHolder {
+  width: 150px;
+  height: 12px;
+  border: 1px solid;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+body #about .skills .skill .counter {
+  height: 100%;
+  width: 0px;
+  transition: all 1.3s ease-in-out;
+  background: url("../img/inflicted1.png");
+}
+
+body #about .skills .skill .counter.activated {
+  width: 80%;
+}
+
+body #portfolio {
+  align-items: center;
+  min-height: 450px;
+  color: #fff !important;
+  background: url(http://cdn30.us1.fansshare.com/image/abstractwallpapers/dark-grey-polygon-abstract-wallpaper-dark-1336258043.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+body #portfolio h2.title {
+  width: 100%;
+  color: #fff;
+  margin: 20px;
+}
+
+body .main {
+  min-height: 450px;
+  color: #fff !important;
+  background: url(../img/gridme.png);
+}
+
+body .main .filters {
+  display: flex;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+
+body .main .filter {
+  color: #2b2b2b;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px 25px;
+  text-decoration: none !important;
+}
+
+body .main .filter:hover {
+  background: #2b2b2b;
+  color: white;
+}
+
+body .main .title {
+  color: #2b2b2b;
+}
+
+body .main .project {
+  display: flex;
+  justify-content: center;
+  background-size: contain !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  height: 191px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+body .main .text {
+  display: none;
+  color: white;
+}
+
+body .main .projectHolder {
+  cursor: pointer;
+}
+
+body .main .projectHolder:hover .overlay {
+  width: 92%;
+  margin-left: 4%;
+}
+
+body .main .projectHolder:hover .text {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  font-size: 13px;
+}
+
+body .main .caption {
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+body .main .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80%;
+  background: url(../img/inflicted.png);
+  width: 0%;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+body #contact {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(../img/gridme.png);
+  padding: 50px 0px;
+}
+
+body #contact h2 {
+  margin-bottom: 30px;
+  color: #2b2b2b;
+}
+
+body #contact .innerContact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body #contact .innerContact i {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  margin-right: 20px;
+  color: #fff;
+  background-color: #2b2b2b;
+  border-radius: 50%;
+  border: 1x solid grey;
+  padding: 10px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+body #contact .innerContact i:hover {
+  transform: rotate(360deg);
+}
+
+body #contact .innerContact a:hover, body #contact .innerContact a:focus {
+  text-decoration: none !important;
+}
+
+body #lesson {
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+  color: #2b2b2b;
+  padding: 50px 0;
+}
+
+body #lesson h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body #lesson p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 17px;
+}
+
+body #lesson .image {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid;
+  border-radius: 10px;
+  width: 40%;
+  margin: 50px auto;
+  padding: 20px 0;
+}
+
+body #lesson ul.custom-list {
+  padding-left: 20px;
+}
+
+body #lesson ul.custom-list li {
+  font-size: 20px;
+}
+
+body #lesson ul.custom-list .counter {
+  color: red;
+  font-size: 20px;
+}
+
+body footer {
+  height: 50px;
+  text-align: center;
+  background: #3b4d55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1b1b1a;
+}
