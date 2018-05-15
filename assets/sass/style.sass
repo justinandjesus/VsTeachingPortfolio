@@ -98,6 +98,17 @@ body
   .navbar
     background: none
     border: none
+    .navbar-header
+      width: 100%
+      display: flex
+      justify-content: center
+    .nav
+      width: 90%
+      position: absolute
+      display: flex
+      left: 50%
+      top: 80px
+      transform: translateX(-50%)
     .navbar-toggle, .navbar-collapse
       border: 0
     .navbar-toggle:focus, .navbar-toggle:hover
@@ -239,6 +250,40 @@ body
     .tphil-holder
       background: url(../img/gridme.png)
       margin-top: 70px
+
+    .teachingstyle
+      background: url(../img/gridme.png)
+
+    .tportrait-holder
+      margin-top: 0
+      background: none
+
+    .teachingexp
+      padding: 50px
+
+    .flext
+      display: flex
+      .one
+        flex: 2
+      .two
+        flex: 1
+        display: flex
+        flex-direction: column
+        align-items: space-evenly
+
+        div
+          display: flex
+          justify-content: center
+          flex-direction: column
+          align-items: center
+          text-align: center
+          margin-bottom: 50px
+
+      .one p, .two p
+        font-size: 17px
+        margin: 0 auto
+        width: 80%
+
 
   #portfolio
     align-items: center
@@ -439,3 +484,8 @@ body
     justify-content: center
     align-items: center
     color: #1b1b1a
+
+  #lesson
+    background: none
+  #main
+    background: none

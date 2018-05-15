@@ -134,6 +134,21 @@ body .navbar {
   border: none;
 }
 
+body .navbar .navbar-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body .navbar .nav {
+  width: 90%;
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 80px;
+  transform: translateX(-50%);
+}
+
 body .navbar .navbar-toggle, body .navbar .navbar-collapse {
   border: 0;
 }
@@ -347,6 +362,49 @@ body #about .skills .skill .counter.activated {
 body #about .tphil-holder {
   background: url(../img/gridme.png);
   margin-top: 70px;
+}
+
+body #about .teachingstyle {
+  background: url(../img/gridme.png);
+}
+
+body #about .tportrait-holder {
+  margin-top: 0;
+  background: none;
+}
+
+body #about .teachingexp {
+  padding: 50px;
+}
+
+body #about .flext {
+  display: flex;
+}
+
+body #about .flext .one {
+  flex: 2;
+}
+
+body #about .flext .two {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+}
+
+body #about .flext .two div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body #about .flext .one p, body #about .flext .two p {
+  font-size: 17px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 body #portfolio {
@@ -593,4 +651,12 @@ body footer {
   justify-content: center;
   align-items: center;
   color: #1b1b1a;
+}
+
+body #lesson {
+  background: none;
+}
+
+body #main {
+  background: none;
 }
